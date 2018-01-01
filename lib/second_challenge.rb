@@ -1,13 +1,20 @@
 def second_challenge
-  groceries = {
+
+    groceries = {
    dairy: ["milk", "yogurt", "cheese"],
    vegetable: ["carrots", "broccoli", "cucumbers"],
    meat: ["chicken", "steak", "salmon"],
    grains: ["rice", "pasta"]
-  }
+		    }
 
-  #code your solution here!
+   arr = []
+    #code your solution here!
+   groceries.each do |key, value|
+     value.each do |element|
+       arr << element
+     end
+   end
 
-  
+ arr
 
-end
+ end
